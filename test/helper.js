@@ -5,23 +5,23 @@ const { web3 } = require('@openzeppelin/test-environment');
 const { expect } = require('chai');
 
 const PERC_DECIMALS = 2;
-const AMPL_DECIMALS = 9;
+const HAM_DECIMALS = 9;
 
-function $AMPL (x) {
-  return new BN(x * (10 ** AMPL_DECIMALS));
+function $HAM (x) {
+  return new BN(x * (10 ** HAM_DECIMALS));
 }
 
 // Perc has to be a whole number
-async function invokeRebase (ampl, perc) {
-  const s = await ampl.totalSupply.call();
+async function invokeRebase (ham, perc) {
+  const s = await ham.totalSupply.call();
   const ordinate = 10 ** PERC_DECIMALS;
   const p_ = new BN(parseInt(perc * ordinate)).div(new BN(100));
   const s_ = s.mul(p_).div(new BN(ordinate));
-  await ampl.rebase(1, s_);
+  await ham.rebase(1, s_);
 }
 
-function checkAmplAprox (x, y) {
-  checkAprox(x, $AMPL(y), 10 ** 6);
+function checkHamAprox (x, y) {
+  checkAprox(x, $HAM(y), 10 ** 6);
 }
 
 function checkSharesAprox (x, y) {
@@ -110,4 +110,4 @@ async function setTimeForNextTransaction (target) {
   increaseTimeForNextTransaction(diff);
 }
 
-module.exports = {checkAmplAprox, checkSharesAprox, invokeRebase, $AMPL, setTimeForNextTransaction, TimeController, printMethodOutput, printStatus};
+module.exports = {checkHamAprox: checkHamAprox, checkSharesAprox, invokeRebase, $HAM: $HAM, setTimeForNextTransaction, TimeController, printMethodOutput, printStatus};

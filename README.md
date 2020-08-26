@@ -1,13 +1,11 @@
 # Token Geyser
 
-[![Build Status](https://travis-ci.com/ampleforth/token-geyser.svg?token=o34Gqy9mFp6fX3Y6jzyy&branch=master)](https://travis-ci.com/ampleforth/token-geyser)&nbsp;&nbsp;[![Coverage Status](https://coveralls.io/repos/github/ampleforth/token-geyser/badge.svg?branch=master&t=LdZfUk)](https://coveralls.io/github/ampleforth/token-geyser?branch=master)
-
-A smart-contract based mechanism to distribute tokens over time, inspired loosely by Compound and Uniswap.
+A smart-contract based mechanism to distribute tokens over time, made by Ampleforth, inspired loosely by Compound and Uniswap.
 
 Implementation of [Continuous Vesting Token Distribution](https://github.com/ampleforth/RFCs/blob/master/RFCs/rfc-1.md)
 
 The official Geyser contract addresses are (by target):
-- UniswapV2 [ETH/AMPL](https://uniswap.exchange/swap?outputCurrency=0xd46ba6d942050d489dbd938a2c909a5d5039a161) Pool: [0xD36132E0c1141B26E62733e018f12Eb38A7b7678](https://etherscan.io/address/0xd36132e0c1141b26e62733e018f12eb38a7b7678)
+- UniswapV2 [ETH/HAM](https://uniswap.exchange/swap?outputCurrency=TODO) Pool: [address](https://etherscan.io/)
 
 ## Table of Contents
 
