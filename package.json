@@ -7,16 +7,16 @@
     "smart-contracts",
     "solidity"
   ],
-  "homepage": "https://github.com/ampleforth/continuous-vesting-distribution#readme",
+  "homepage": "https://github.com/Ham-Protocol/ham-geyser#readme",
   "bugs": {
-    "url": "https://github.com/ampleforth/continuous-vesting-distribution/issues"
+    "url": "https://github.com/Ham-Protocol/ham-geyser/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ampleforth/continuous-vesting-distribution.git"
+    "url": "git+https://github.com/Ham-Protocol/ham-geyser.git"
   },
   "license": "GPL-3.0",
-  "author": "dev-support@ampleforth.org",
+  "author": "weare@ham.money",
   "scripts": {
     "precommit": "./scripts/pre-commit.sh",
     "compile-contracts": "./scripts/compile-contracts.sh",

@@ -9,7 +9,7 @@ import "./TokenPool.sol";
 
 /**
  * @title Token Geyser
- * @dev A smart-contract based mechanism to distribute tokens over time, inspired loosely by
+ * @dev A smart-contract based mechanism to distribute tokens over time, made by Ampleforth and inspired loosely by
  *      Compound and Uniswap.
  *
  *      Distribution tokens are added to a locked pool in the contract and become unlocked over time
